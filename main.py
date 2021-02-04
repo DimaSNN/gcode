@@ -17,7 +17,7 @@ stopCode = 'M00'
 def Condition1(inputLines):
     i = 0
     while i < len(inputLines):
-        inputLines[i] = re.sub(r' A\d{1,3}\.\d{5}', '', inputLines[i])
+        inputLines[i] = re.sub(r' A\d{1,6}\.\d{6}', '', inputLines[i])
         #print(inputLines[i])
         i += 1
 
@@ -68,7 +68,7 @@ def Condition3(inputLines):
 def main():
     print ("Start program")
     # print command line arguments
-    print ('Number of arguments:', len(sys.argv), 'arguments.')
+    #print ('Number of arguments:', len(sys.argv), 'arguments.')
     print ('Argument List:', str(sys.argv))
 
     #default filenames
