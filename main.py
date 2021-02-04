@@ -104,7 +104,7 @@ def main():
     for el in lines:
         f.write(el + '\n')
     f.close()
-
+    print(str(len(lines)) + " lines were written!")
 
 
 #chouse main function
